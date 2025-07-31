@@ -1,0 +1,29 @@
+2025-07-31 17:48:38,168 - data_ingestion - ERROR - failed to complete the data ingestion process : [Errno 2] No such file or directory: '/kaggle/input/online-food-dataset/onlinefoods.csv'
+2025-07-31 17:54:30,550 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-07-31 18:13:49,314 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-07-31 18:13:49,315 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-07-31 18:13:49,317 - data_ingestion - ERROR - unexpected error occuring while saving the data [WinError 3] The system cannot find the path specified: '.data \\raw'
+2025-07-31 18:13:49,317 - data_ingestion - ERROR - failed to complete the data ingestion process : [WinError 3] The system cannot find the path specified: '.data \\raw'
+2025-07-31 18:14:27,063 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-07-31 18:14:27,063 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-07-31 18:14:27,078 - data_ingestion - ERROR - unexpected error occuring while saving the data name 'Fasle' is not defined
+2025-07-31 18:14:27,078 - data_ingestion - ERROR - failed to complete the data ingestion process : name 'Fasle' is not defined
+2025-07-31 18:18:10,595 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-07-31 18:18:10,595 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-07-31 18:18:10,608 - data_ingestion - DEBUG - Train adn Test data saved ./data\raw
+2025-07-31 18:52:36,149 - data_ingestion - DEBUG - Data loaded properly
+2025-07-31 18:52:36,149 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-07-31 18:52:36,149 - data_ingestion - DEBUG - Target columns encoded
+2025-07-31 18:52:36,149 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-07-31 18:52:36,155 - data_ingestion - DEBUG - Target columns encoded
+2025-07-31 18:52:36,160 - data_ingestion - DEBUG - processed data saved ./data\intrim
+2025-07-31 20:16:44,783 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 25, 'random_state': 42}
+2025-07-31 20:16:44,783 - data_ingestion - DEBUG - Model training started with 310 samples
+2025-07-31 20:16:45,052 - data_ingestion - DEBUG - Model training completed
+2025-07-31 20:16:45,066 - data_ingestion - DEBUG - Model saved to models/model.pkl
+2025-07-31 21:50:22,087 - data_ingestion - ERROR - file not found [Errno 2] No such file or directory: '.models/model.pkl'
+2025-07-31 21:50:22,087 - data_ingestion - ERROR - failed to complete the model evaluation process [Errno 2] No such file or directory: '.models/model.pkl'
+2025-07-31 21:50:40,917 - data_ingestion - DEBUG - model loaded from ./models/model.pkl
+2025-07-31 21:50:40,928 - data_ingestion - DEBUG - Data loaded from ./data/intrim/test_processed_data
+2025-07-31 21:50:40,943 - data_ingestion - DEBUG - model evaluation metrics calculated
+2025-07-31 21:50:40,944 - data_ingestion - DEBUG - metrics saved report/metrics.json
