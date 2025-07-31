@@ -77,3 +77,15 @@
 2025-07-31 22:29:19,016 - data_ingestion - DEBUG - Data loaded from ./data/intrim/test_processed_data
 2025-07-31 22:29:19,054 - data_ingestion - DEBUG - model evaluation metrics calculated
 2025-07-31 22:29:19,056 - data_ingestion - DEBUG - metrics saved report/metrics.json
+2025-07-31 22:44:39,836 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-07-31 22:44:39,852 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-07-31 22:44:39,852 - data_ingestion - DEBUG - Train adn Test data saved ./data\raw
+2025-07-31 22:46:29,755 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-07-31 22:46:29,762 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 22, 'random_state': 2}
+2025-07-31 22:46:29,762 - data_ingestion - DEBUG - Model training started with 310 samples
+2025-07-31 22:46:29,832 - data_ingestion - DEBUG - Model training completed
+2025-07-31 22:46:29,834 - data_ingestion - DEBUG - Model saved to models/model.pkl
+2025-07-31 22:46:35,636 - data_ingestion - DEBUG - model loaded from ./models/model.pkl
+2025-07-31 22:46:35,642 - data_ingestion - DEBUG - Data loaded from ./data/intrim/test_processed_data
+2025-07-31 22:46:35,671 - data_ingestion - DEBUG - model evaluation metrics calculated
+2025-07-31 22:46:35,673 - data_ingestion - DEBUG - metrics saved report/metrics.json
