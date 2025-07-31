@@ -3,5 +3,5 @@ data_ingestion:
 
 
 model_training:
-  n_estimators: 22
-  random_state: 2
+  n_estimators: 40
+  random_state: 42
