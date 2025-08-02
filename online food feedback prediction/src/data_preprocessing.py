@@ -1,7 +1,8 @@
 import pandas as pd
 import logging
 import os
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder,OrdinalEncoder
+from sklearn.compose import ColumnTransformer
 
 log_dir = "logs"
 os.makedirs(log_dir,exist_ok = True)
@@ -28,20 +29,24 @@ def preprocess_df(df: pd.DataFrame) -> pd.DataFrame:
     """ Preprocessing the DataFrame by encoding the traget columns  """
     try:
         logger.debug("starting preprocessing for DataFrame")
-        encoder1=LabelEncoder()
-        encoder2=LabelEncoder()
-        encoder3=LabelEncoder()
-        encoder4=LabelEncoder()
-        encoder5=LabelEncoder()
-        encoder6=LabelEncoder()
-        encoder7=LabelEncoder()
-        df['Gender']=encoder1.fit_transform(df['Gender'])
-        df['Marital Status']=encoder2.fit_transform(df['Marital Status'])
-        df['Occupation']=encoder3.fit_transform(df['Occupation'])
-        df['Educational Qualifications']=encoder4.fit_transform(df['Educational Qualifications'])
-        df['Output']=encoder5.fit_transform(df['Output'])
-        df['Feedback']=encoder6.fit_transform(df['Feedback'])
-        df['Monthly Income']=encoder7.fit_transform(df['Monthly Income'])
+        le = LabelEncoder()
+        df["Feedback"] = le.fit_transform(df["Feedback"])
+        
+        ohe = OneHotEncoder(sparse_output=False,drop="first")
+        oe = OrdinalEncoder()
+
+        transformer = ColumnTransformer(transformers=[
+            ("trf1", ohe, ["Gender", "Marital Status", "Occupation"]),
+            ("trf2", OrdinalEncoder(categories=[
+                ["No Income", "Below Rs.10000", "10001 to 25000", "25001 to 50000", "More than 50000"],
+                ["Uneducated", "School", "Graduate", "Post Graduate", "Ph.D"]
+            ]), ["Monthly Income", "Educational Qualifications"])
+        ], remainder="passthrough")
+
+        df_encoded = transformer.fit_transform(df)
+        df = pd.DataFrame(df_encoded)
+       
+        
         logger.debug("Target columns encoded")
         return df
         

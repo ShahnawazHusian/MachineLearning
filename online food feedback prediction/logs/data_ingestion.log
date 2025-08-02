@@ -122,3 +122,70 @@
 2025-07-31 23:02:48,389 - data_ingestion - DEBUG - Data loaded from ./data/intrim/test_processed_data
 2025-07-31 23:02:48,437 - data_ingestion - DEBUG - model evaluation metrics calculated
 2025-07-31 23:02:48,437 - data_ingestion - DEBUG - metrics saved report/metrics.json
+2025-08-02 23:11:01,121 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-02 23:11:01,204 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-08-02 23:11:01,320 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-08-02 23:11:01,372 - data_ingestion - DEBUG - Train adn Test data saved ./data\raw
+2025-08-02 23:11:08,770 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:11:08,770 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:11:08,770 - data_ingestion - ERROR - Error during encoding 'LabelEncoder' object is not callable
+2025-08-02 23:11:08,770 - data_ingestion - ERROR - failed to complete the data transformation process : 'LabelEncoder' object is not callable
+2025-08-02 23:17:34,027 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:17:34,027 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:17:34,027 - data_ingestion - ERROR - Error during encoding 'LabelEncoder' object is not callable
+2025-08-02 23:17:34,027 - data_ingestion - ERROR - failed to complete the data transformation process : 'LabelEncoder' object is not callable
+2025-08-02 23:21:05,007 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:21:05,007 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:21:05,007 - data_ingestion - ERROR - Error during encoding 'OneHotEncoder' object is not callable
+2025-08-02 23:21:05,007 - data_ingestion - ERROR - failed to complete the data transformation process : 'OneHotEncoder' object is not callable
+2025-08-02 23:27:53,430 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-02 23:27:53,444 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-08-02 23:27:53,448 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-08-02 23:27:53,467 - data_ingestion - DEBUG - Train adn Test data saved ./data\raw
+2025-08-02 23:28:00,639 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:28:00,641 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:28:00,641 - data_ingestion - ERROR - Error during encoding 'OneHotEncoder' object is not callable
+2025-08-02 23:28:00,643 - data_ingestion - ERROR - failed to complete the data transformation process : 'OneHotEncoder' object is not callable
+2025-08-02 23:29:01,634 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:29:01,634 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:29:01,634 - data_ingestion - ERROR - Error during encoding 'OneHotEncoder' object is not callable
+2025-08-02 23:29:01,634 - data_ingestion - ERROR - failed to complete the data transformation process : 'OneHotEncoder' object is not callable
+2025-08-02 23:30:33,679 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:30:33,679 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:30:33,679 - data_ingestion - ERROR - Error during encoding OneHotEncoder.__init__() got an unexpected keyword argument 'sparse'
+2025-08-02 23:30:33,679 - data_ingestion - ERROR - failed to complete the data transformation process : OneHotEncoder.__init__() got an unexpected keyword argument 'sparse'
+2025-08-02 23:31:13,585 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:31:13,585 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:31:13,585 - data_ingestion - ERROR - Error during encoding OneHotEncoder.__init__() got an unexpected keyword argument 'sparse'
+2025-08-02 23:31:13,585 - data_ingestion - ERROR - failed to complete the data transformation process : OneHotEncoder.__init__() got an unexpected keyword argument 'sparse'
+2025-08-02 23:32:04,003 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:32:04,003 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:32:04,186 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:32:04,186 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:32:04,186 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:32:04,186 - data_ingestion - ERROR - failed to complete the data transformation process : 'numpy.ndarray' object has no attribute 'to_csv'
+2025-08-02 23:32:12,067 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-02 23:32:12,071 - data_ingestion - ERROR - Failed  to complete the model building process [Errno 2] No such file or directory: './data/intrim/train_processed_data'
+2025-08-02 23:34:43,600 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:34:43,600 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:34:43,600 - data_ingestion - ERROR - Error during encoding Names provided are not unique: ['trf1', 'trf1']
+2025-08-02 23:34:43,600 - data_ingestion - ERROR - failed to complete the data transformation process : Names provided are not unique: ['trf1', 'trf1']
+2025-08-02 23:35:04,599 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:35:04,599 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:35:04,630 - data_ingestion - ERROR - column not found 'Feedback'
+2025-08-02 23:35:04,630 - data_ingestion - ERROR - failed to complete the data transformation process : 'Feedback'
+2025-08-02 23:37:46,065 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:37:46,065 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:37:46,085 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:37:46,086 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:37:46,096 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:37:46,110 - data_ingestion - DEBUG - processed data saved ./data\intrim
+2025-08-02 23:37:52,377 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-02 23:37:52,390 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 40, 'random_state': 42}
+2025-08-02 23:37:52,390 - data_ingestion - DEBUG - Model training started with 310 samples
+2025-08-02 23:37:52,641 - data_ingestion - DEBUG - Model training completed
+2025-08-02 23:37:52,650 - data_ingestion - DEBUG - Model saved to models/model.pkl
+2025-08-02 23:37:59,093 - data_ingestion - DEBUG - model loaded from ./models/model.pkl
+2025-08-02 23:37:59,101 - data_ingestion - DEBUG - Data loaded from ./data/intrim/test_processed_data
+2025-08-02 23:37:59,145 - data_ingestion - DEBUG - model evaluation metrics calculated
+2025-08-02 23:37:59,145 - data_ingestion - DEBUG - metrics saved report/metrics.json
