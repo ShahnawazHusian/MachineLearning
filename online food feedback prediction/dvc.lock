@@ -26,10 +26,10 @@ stages:
       nfiles: 2
     - path: src/data_preprocessing.py
       hash: md5
-      md5: 420805a8cd489b3c581e372a9fd19e5e
-      size: 3048
+      md5: 408cd1e706ebb4bbc648e02400f95cd6
+      size: 3041
     outs:
-    - path: data/intrim
+    - path: data/interim
       hash: md5
       md5: f56d7d19180eb162e7fe0b4d6b50c9b5.dir
       size: 27488
@@ -37,15 +37,15 @@ stages:
   model_training:
     cmd: python src/model_training.py
     deps:
-    - path: data/intrim
+    - path: data/interim
       hash: md5
       md5: f56d7d19180eb162e7fe0b4d6b50c9b5.dir
       size: 27488
       nfiles: 2
     - path: src/model_training.py
       hash: md5
-      md5: 38b69ad5f36de3d9ea6475632e9f048d
-      size: 4275
+      md5: 94d5d3e791be5c842e59af815d170be1
+      size: 4276
     params:
       params.yaml:
         model_training.n_estimators: 40

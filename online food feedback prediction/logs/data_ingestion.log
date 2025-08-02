@@ -189,3 +189,28 @@
 2025-08-02 23:37:59,101 - data_ingestion - DEBUG - Data loaded from ./data/intrim/test_processed_data
 2025-08-02 23:37:59,145 - data_ingestion - DEBUG - model evaluation metrics calculated
 2025-08-02 23:37:59,145 - data_ingestion - DEBUG - metrics saved report/metrics.json
+2025-08-02 23:54:22,569 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:54:22,569 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:54:22,590 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:54:22,590 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:54:22,609 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:54:22,630 - data_ingestion - DEBUG - processed data saved ./data\interim
+2025-08-02 23:54:57,173 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:54:57,173 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:54:57,173 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:54:57,173 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:54:57,197 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:54:57,208 - data_ingestion - DEBUG - processed data saved ./data\interim
+2025-08-02 23:55:22,794 - data_ingestion - DEBUG - Data loaded properly
+2025-08-02 23:55:22,794 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:55:22,808 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:55:22,808 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-02 23:55:22,818 - data_ingestion - DEBUG - Target columns encoded
+2025-08-02 23:55:22,836 - data_ingestion - DEBUG - processed data saved ./data\interim
+2025-08-02 23:55:29,167 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-02 23:55:29,171 - data_ingestion - ERROR - Failed  to complete the model building process [Errno 2] No such file or directory: './data/intrim/train_processed_data'
+2025-08-02 23:56:47,009 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-02 23:56:47,020 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 40, 'random_state': 42}
+2025-08-02 23:56:47,020 - data_ingestion - DEBUG - Model training started with 310 samples
+2025-08-02 23:56:47,117 - data_ingestion - DEBUG - Model training completed
+2025-08-02 23:56:47,120 - data_ingestion - DEBUG - Model saved to models/model.pkl

@@ -119,7 +119,7 @@ def main():
 
     try:
         params = load_params('params.yaml')['model_training']
-        train_data = pd.read_csv("./data/intrim/train_processed_data")
+        train_data = pd.read_csv("./data/interim/train_processed_data")
         X_train = train_data.iloc[:,:-1].values
         y_train = train_data.iloc[:,-1].values
 

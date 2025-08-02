@@ -13,11 +13,11 @@ stages:
     - data/raw
     - src/data_preprocessing.py
     outs:
-    - data/intrim
+    - data/interim
   model_training:
     cmd: python src/model_training.py
     deps:
-    - data/intrim
+    - data/interim
     - src/model_training.py
     params:
     - model_training.n_estimators

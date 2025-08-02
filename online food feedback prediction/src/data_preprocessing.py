@@ -31,7 +31,7 @@ def preprocess_df(df: pd.DataFrame) -> pd.DataFrame:
         logger.debug("starting preprocessing for DataFrame")
         le = LabelEncoder()
         df["Feedback"] = le.fit_transform(df["Feedback"])
-        
+
         ohe = OneHotEncoder(sparse_output=False,drop="first")
         oe = OrdinalEncoder()
 
@@ -67,7 +67,7 @@ def main():
         train_processed_data = preprocess_df(train_data)
         test_processed_data = preprocess_df(test_data)
 
-        data_path = os.path.join("./data","intrim")
+        data_path = os.path.join("./data","interim")
         os.makedirs(data_path,exist_ok=True)
 
         train_processed_data.to_csv(os.path.join(data_path,"train_processed_data"),index = False)
