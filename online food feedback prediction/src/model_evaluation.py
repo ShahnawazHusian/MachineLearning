@@ -123,7 +123,7 @@ def main():
     try:
         params = load_params(params_path='params.yaml')
         clf = load_model("./models/model.pkl")
-        test_data = load_data("./data/intrim/test_processed_data")
+        test_data = load_data("./data/interim/test_processed_data")
 
         X_test = test_data.iloc[:,:-1].values
         y_test = test_data.iloc[:,-1].values

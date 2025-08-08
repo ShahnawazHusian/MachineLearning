@@ -214,3 +214,7 @@
 2025-08-02 23:56:47,020 - data_ingestion - DEBUG - Model training started with 310 samples
 2025-08-02 23:56:47,117 - data_ingestion - DEBUG - Model training completed
 2025-08-02 23:56:47,120 - data_ingestion - DEBUG - Model saved to models/model.pkl
+2025-08-09 00:36:22,486 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 00:36:23,917 - data_ingestion - DEBUG - model loaded from ./models/model.pkl
+2025-08-09 00:36:23,937 - data_ingestion - ERROR - unexcepted error occured while loading the dats [Errno 2] No such file or directory: './data/intrim/test_processed_data'
+2025-08-09 00:36:23,938 - data_ingestion - ERROR - failed to complete the model evaluation process [Errno 2] No such file or directory: './data/intrim/test_processed_data'
