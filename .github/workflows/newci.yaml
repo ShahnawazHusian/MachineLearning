@@ -25,7 +25,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if (Test-Path "D:/online_Food_feedback_prediction/online food feedback prediction/requirements.txt") {pip install -r D:/online_Food_feedback_prediction/online food feedback prediction/requirements.txt}
-        pip install pandas
+        pip install pandas scikit-learn logging pickle numpy dvclive yaml
 
     - name: Install DVC
       run: |
