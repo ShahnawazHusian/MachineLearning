@@ -218,3 +218,87 @@
 2025-08-09 00:36:23,917 - data_ingestion - DEBUG - model loaded from ./models/model.pkl
 2025-08-09 00:36:23,937 - data_ingestion - ERROR - unexcepted error occured while loading the dats [Errno 2] No such file or directory: './data/intrim/test_processed_data'
 2025-08-09 00:36:23,938 - data_ingestion - ERROR - failed to complete the model evaluation process [Errno 2] No such file or directory: './data/intrim/test_processed_data'
+2025-08-09 01:35:14,024 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,024 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,024 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,024 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,120 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-08-09 01:35:14,120 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-08-09 01:35:14,120 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-08-09 01:35:14,120 - data_ingestion - DEBUG - Data loaded from D:/online_Food_feedback_prediction/onlinefoods.csv
+2025-08-09 01:35:14,179 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-08-09 01:35:14,179 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-08-09 01:35:14,179 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-08-09 01:35:14,179 - data_ingestion - DEBUG - Data Preprocess Completed
+2025-08-09 01:35:14,254 - data_ingestion - DEBUG - Train adn Test data saved ./data\raw
+2025-08-09 01:35:14,254 - data_ingestion - DEBUG - Train adn Test data saved ./data\raw
+2025-08-09 01:35:14,254 - data_ingestion - DEBUG - Train adn Test data saved ./data\raw
+2025-08-09 01:35:14,254 - data_ingestion - DEBUG - Train adn Test data saved ./data\raw
+2025-08-09 01:35:14,283 - data_ingestion - DEBUG - Data loaded properly
+2025-08-09 01:35:14,283 - data_ingestion - DEBUG - Data loaded properly
+2025-08-09 01:35:14,283 - data_ingestion - DEBUG - Data loaded properly
+2025-08-09 01:35:14,283 - data_ingestion - DEBUG - Data loaded properly
+2025-08-09 01:35:14,285 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-09 01:35:14,285 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-09 01:35:14,285 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-09 01:35:14,285 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-09 01:35:14,338 - data_ingestion - DEBUG - Target columns encoded
+2025-08-09 01:35:14,338 - data_ingestion - DEBUG - Target columns encoded
+2025-08-09 01:35:14,338 - data_ingestion - DEBUG - Target columns encoded
+2025-08-09 01:35:14,338 - data_ingestion - DEBUG - Target columns encoded
+2025-08-09 01:35:14,338 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-09 01:35:14,338 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-09 01:35:14,338 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-09 01:35:14,338 - data_ingestion - DEBUG - starting preprocessing for DataFrame
+2025-08-09 01:35:14,358 - data_ingestion - DEBUG - Target columns encoded
+2025-08-09 01:35:14,358 - data_ingestion - DEBUG - Target columns encoded
+2025-08-09 01:35:14,358 - data_ingestion - DEBUG - Target columns encoded
+2025-08-09 01:35:14,358 - data_ingestion - DEBUG - Target columns encoded
+2025-08-09 01:35:14,373 - data_ingestion - DEBUG - processed data saved ./data\interim
+2025-08-09 01:35:14,373 - data_ingestion - DEBUG - processed data saved ./data\interim
+2025-08-09 01:35:14,373 - data_ingestion - DEBUG - processed data saved ./data\interim
+2025-08-09 01:35:14,373 - data_ingestion - DEBUG - processed data saved ./data\interim
+2025-08-09 01:35:14,376 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,376 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,376 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,376 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,403 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 40, 'random_state': 42}
+2025-08-09 01:35:14,403 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 40, 'random_state': 42}
+2025-08-09 01:35:14,403 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 40, 'random_state': 42}
+2025-08-09 01:35:14,403 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 40, 'random_state': 42}
+2025-08-09 01:35:14,405 - data_ingestion - DEBUG - Model training started with 310 samples
+2025-08-09 01:35:14,405 - data_ingestion - DEBUG - Model training started with 310 samples
+2025-08-09 01:35:14,405 - data_ingestion - DEBUG - Model training started with 310 samples
+2025-08-09 01:35:14,405 - data_ingestion - DEBUG - Model training started with 310 samples
+2025-08-09 01:35:14,558 - data_ingestion - DEBUG - Model training completed
+2025-08-09 01:35:14,558 - data_ingestion - DEBUG - Model training completed
+2025-08-09 01:35:14,558 - data_ingestion - DEBUG - Model training completed
+2025-08-09 01:35:14,558 - data_ingestion - DEBUG - Model training completed
+2025-08-09 01:35:14,566 - data_ingestion - DEBUG - Model saved to models/model.pkl
+2025-08-09 01:35:14,566 - data_ingestion - DEBUG - Model saved to models/model.pkl
+2025-08-09 01:35:14,566 - data_ingestion - DEBUG - Model saved to models/model.pkl
+2025-08-09 01:35:14,566 - data_ingestion - DEBUG - Model saved to models/model.pkl
+2025-08-09 01:35:14,570 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,570 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,570 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,570 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-09 01:35:14,590 - data_ingestion - DEBUG - model loaded from ./models/model.pkl
+2025-08-09 01:35:14,590 - data_ingestion - DEBUG - model loaded from ./models/model.pkl
+2025-08-09 01:35:14,590 - data_ingestion - DEBUG - model loaded from ./models/model.pkl
+2025-08-09 01:35:14,590 - data_ingestion - DEBUG - model loaded from ./models/model.pkl
+2025-08-09 01:35:14,596 - data_ingestion - DEBUG - Data loaded from ./data/interim/test_processed_data
+2025-08-09 01:35:14,596 - data_ingestion - DEBUG - Data loaded from ./data/interim/test_processed_data
+2025-08-09 01:35:14,596 - data_ingestion - DEBUG - Data loaded from ./data/interim/test_processed_data
+2025-08-09 01:35:14,596 - data_ingestion - DEBUG - Data loaded from ./data/interim/test_processed_data
+2025-08-09 01:35:14,641 - data_ingestion - DEBUG - model evaluation metrics calculated
+2025-08-09 01:35:14,641 - data_ingestion - DEBUG - model evaluation metrics calculated
+2025-08-09 01:35:14,641 - data_ingestion - DEBUG - model evaluation metrics calculated
+2025-08-09 01:35:14,641 - data_ingestion - DEBUG - model evaluation metrics calculated
+2025-08-09 01:35:17,548 - data_ingestion - ERROR - failed to complete the model evaluation process could not remove 'D:/online_Food_feedback_prediction/online food feedback prediction/logs/data_ingestion.log': The process cannot access the file because it is being used by another process.
+
+2025-08-09 01:35:17,548 - data_ingestion - ERROR - failed to complete the model evaluation process could not remove 'D:/online_Food_feedback_prediction/online food feedback prediction/logs/data_ingestion.log': The process cannot access the file because it is being used by another process.
+
+2025-08-09 01:35:17,548 - data_ingestion - ERROR - failed to complete the model evaluation process could not remove 'D:/online_Food_feedback_prediction/online food feedback prediction/logs/data_ingestion.log': The process cannot access the file because it is being used by another process.
+
+2025-08-09 01:35:17,548 - data_ingestion - ERROR - failed to complete the model evaluation process could not remove 'D:/online_Food_feedback_prediction/online food feedback prediction/logs/data_ingestion.log': The process cannot access the file because it is being used by another process.
+
