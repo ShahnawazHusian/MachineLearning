@@ -33,4 +33,5 @@ jobs:
 
     - name: Reproduce DVC pipeline
       run: |
+        cd "D:/online_Food_feedback_prediction/online food feedback prediction"
         dvc repro
