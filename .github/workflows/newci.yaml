@@ -34,5 +34,5 @@ jobs:
 
     - name: Reproduce DVC pipeline
       run: |
-        cd "online food feedback prediction src"
+        cd "online_Food_feedback_prediction\online food feedback prediction\src"
         pytest _.test.py
