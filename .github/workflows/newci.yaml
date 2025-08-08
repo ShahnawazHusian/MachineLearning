@@ -25,7 +25,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if (Test-Path "D:/online_Food_feedback_prediction/online food feedback prediction/requirements.txt") {pip install -r D:/online_Food_feedback_prediction/online food feedback prediction/requirements.txt}
-        pip install pandas scikit-learn numpy dvclive PyYAML pytest
+        pip install pandas scikit-learn numpy dvclive PyYAML
 
 
     - name: Install DVC
@@ -34,4 +34,5 @@ jobs:
 
     - name: Reproduce DVC pipeline
       run: |
-        pytest "online food feedback prediction/src/_test.py"
+        cd "online food feedback prediction"
+        pytest _.test.py
