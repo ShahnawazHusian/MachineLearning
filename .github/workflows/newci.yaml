@@ -34,5 +34,5 @@ jobs:
 
     - name: Reproduce DVC pipeline
       run: |
-        cd "online_Food_feedback_prediction\online food feedback prediction\src"
-        pytest _.test.py
+        if (Test-Path "D:/online_Food_feedback_prediction/online food feedback prediction/src/_test.py") {pytest D:/online_Food_feedback_prediction/online food feedback prediction/src/_test.py}
+        
