@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import numpy as np
 import pickle
+import joblib
 import logging
 from xgboost import XGBClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -80,21 +81,20 @@ def train_model(X_train : np.ndarray,y_train : np.ndarray, params: dict) -> Rand
         if X_train.shape[0] != y_train.shape[0]:
             raise ValueError("the number o fthe sample x_train and y_train must be same")
         
-        logger.debug("initilizig RandomForest model  with parameters %s",params)
+        logger.debug("initilizig XGBClassifier model  with parameters %s",params)
         xg_model = XGBClassifier(
-        n_estimators=params['model_training']['n_estimators'],
-        learning_rate=params['model_training']['learning_rate'],
-        max_depth=params['model_training']['max_depth'],
-        subsample=params['model_training']['subsample'],
-        colsample_bytree=params['model_training']['colsample_bytree'],
-        gamma=params['model_training']['gamma'],
-        reg_lambda=params['model_training']['reg_lambda'],
-        reg_alpha=params['model_training']['reg_alpha'],
-        objective=params['model_training']['objective'],
-        eval_metric=params['model_training']['eval_metric'],
-        n_jobs=params['model_training']['n_jobs'],
-        random_state=params['model_training']['random_state']
-        )
+        n_estimators=params['n_estimators'],
+        learning_rate=params['learning_rate'],
+        max_depth=params['max_depth'],
+        subsample=params['subsample'],
+        colsample_bytree=params['colsample_bytree'],
+        gamma=params['gamma'],
+        reg_lambda=params['reg_lambda'],
+        reg_alpha=params['reg_alpha'],
+        objective=params['objective'],
+        eval_metric=params['eval_metric'],
+        n_jobs=params['n_jobs'],
+        random_state=params['random_state'])
 
         # clf = RandomForestClassifier(n_estimators=params["n_estimators"],random_state=params["random_state"])
 
@@ -121,6 +121,7 @@ def save_model(model,file_path:str) -> None:
         os.makedirs(os.path.dirname(file_path),exist_ok=True)
 
         with open (file_path,"wb") as file:
+            # joblib.dump(model, file)
             pickle.dump(model,file)
         logger.debug("Model saved to %s", file_path)
 
@@ -141,7 +142,7 @@ def main():
 
         xg_model = train_model(X_train=X_train,y_train=y_train,params=params)
 
-        model_save_path = "./models/model.pkl"
+        model_save_path = "models/model.pkl"
         save_model(xg_model,model_save_path)
 
     except Exception as e:
