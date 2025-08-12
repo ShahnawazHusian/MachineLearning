@@ -302,3 +302,15 @@
 
 2025-08-09 01:35:17,548 - data_ingestion - ERROR - failed to complete the model evaluation process could not remove 'D:/online_Food_feedback_prediction/online food feedback prediction/logs/data_ingestion.log': The process cannot access the file because it is being used by another process.
 
+2025-08-12 22:21:07,587 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-12 22:21:07,654 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'reg_lambda': 1, 'reg_alpha': 0, 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'n_jobs': -1, 'random_state': 42}
+2025-08-12 22:21:07,654 - data_ingestion - ERROR - error during model training 'model_training'
+2025-08-12 22:21:07,654 - data_ingestion - ERROR - Failed  to complete the model building process 'model_training'
+2025-08-12 22:23:08,597 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-12 22:23:08,612 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'reg_lambda': 1, 'reg_alpha': 0, 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'n_jobs': -1, 'random_state': 42}
+2025-08-12 22:23:08,613 - data_ingestion - ERROR - error during model training 'model_training'
+2025-08-12 22:23:08,613 - data_ingestion - ERROR - Failed  to complete the model building process 'model_training'
+2025-08-12 22:25:02,491 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2025-08-12 22:25:02,491 - data_ingestion - DEBUG - initilizig RandomForest model  with parameters {'n_estimators': 100, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'reg_lambda': 1, 'reg_alpha': 0, 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'n_jobs': -1, 'random_state': 42}
+2025-08-12 22:25:02,491 - data_ingestion - ERROR - error during model training 'model_training'
+2025-08-12 22:25:02,491 - data_ingestion - ERROR - Failed  to complete the model building process 'model_training'

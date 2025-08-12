@@ -3,6 +3,7 @@ import os
 import numpy as np
 import pickle
 import logging
+from xgboost import XGBClassifier
 from sklearn.ensemble import RandomForestClassifier
 import yaml
 
@@ -10,13 +11,13 @@ import yaml
 log_dir = "logs"
 os.makedirs(log_dir,exist_ok = True)
 
-logger = logging.getLogger("data_ingestion")
+logger = logging.getLogger("model_training")
 logger.setLevel("DEBUG")
 
 console_handler = logging.StreamHandler()
 console_handler.setLevel("DEBUG")
 
-log_file_path = os.path.join(log_dir,"data_ingestion.log")
+log_file_path = os.path.join(log_dir,"model_training.log")
 file_handler = logging.FileHandler(log_file_path)
 file_handler.setLevel("DEBUG")
 
@@ -80,13 +81,28 @@ def train_model(X_train : np.ndarray,y_train : np.ndarray, params: dict) -> Rand
             raise ValueError("the number o fthe sample x_train and y_train must be same")
         
         logger.debug("initilizig RandomForest model  with parameters %s",params)
-        clf = RandomForestClassifier(n_estimators=params["n_estimators"],random_state=params["random_state"])
+        xg_model = XGBClassifier(
+        n_estimators=params['model_training']['n_estimators'],
+        learning_rate=params['model_training']['learning_rate'],
+        max_depth=params['model_training']['max_depth'],
+        subsample=params['model_training']['subsample'],
+        colsample_bytree=params['model_training']['colsample_bytree'],
+        gamma=params['model_training']['gamma'],
+        reg_lambda=params['model_training']['reg_lambda'],
+        reg_alpha=params['model_training']['reg_alpha'],
+        objective=params['model_training']['objective'],
+        eval_metric=params['model_training']['eval_metric'],
+        n_jobs=params['model_training']['n_jobs'],
+        random_state=params['model_training']['random_state']
+        )
+
+        # clf = RandomForestClassifier(n_estimators=params["n_estimators"],random_state=params["random_state"])
 
         logger.debug("Model training started with %d samples",X_train.shape[0])
-        clf.fit(X_train,y_train)
+        xg_model.fit(X_train,y_train)
         logger.debug("Model training completed")
 
-        return clf
+        return xg_model
     except ValueError as e:
         logger.error("Value error during training %s",e)
         raise
@@ -123,10 +139,10 @@ def main():
         X_train = train_data.iloc[:,:-1].values
         y_train = train_data.iloc[:,-1].values
 
-        clf = train_model(X_train=X_train,y_train=y_train,params=params)
+        xg_model = train_model(X_train=X_train,y_train=y_train,params=params)
 
-        model_save_path = "models/model.pkl"
-        save_model(clf,model_save_path)
+        model_save_path = "./models/model.pkl"
+        save_model(xg_model,model_save_path)
 
     except Exception as e:
         logger.error("Failed  to complete the model building process %s",e)

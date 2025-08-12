@@ -12,13 +12,13 @@ from dvclive import Live
 log_dir = "logs"
 os.makedirs(log_dir,exist_ok = True)
 
-logger = logging.getLogger("data_ingestion")
+logger = logging.getLogger("model_evaluation")
 logger.setLevel("DEBUG")
 
 console_handler = logging.StreamHandler()
 console_handler.setLevel("DEBUG")
 
-log_file_path = os.path.join(log_dir,"data_ingestion.log")
+log_file_path = os.path.join(log_dir,"model_evaluation.log")
 file_handler = logging.FileHandler(log_file_path)
 file_handler.setLevel("DEBUG")
 
